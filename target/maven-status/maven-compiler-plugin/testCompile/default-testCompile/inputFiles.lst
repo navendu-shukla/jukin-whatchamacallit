@@ -1,0 +1,14 @@
+C:\Users\navendushukla\workspace\automation\src\test\java\JukinMedia\automation\BaseTest.java
+C:\Users\navendushukla\workspace\automation\src\test\java\Utils\SeleniumWait.java
+C:\Users\navendushukla\workspace\automation\src\test\java\Utils\TestSessionInitiator.java
+C:\Users\navendushukla\workspace\automation\src\test\java\JukinMedia\automation\action\SuccessPageAction.java
+C:\Users\navendushukla\workspace\automation\src\test\java\JukinMedia\automation\stepdefs\SuccessPageStepDef.java
+C:\Users\navendushukla\workspace\automation\src\test\java\Utils\WebDriverFactory.java
+C:\Users\navendushukla\workspace\automation\src\test\java\JukinMedia\automation\stepdefs\LoginPageStepDef.java
+C:\Users\navendushukla\workspace\automation\src\test\java\JukinMedia\automation\stepdefs\RegisterPageStepDef.java
+C:\Users\navendushukla\workspace\automation\src\test\java\JukinMedia\automation\action\ForgotPasswordPageAction.java
+C:\Users\navendushukla\workspace\automation\src\test\java\JukinMedia\automation\action\RegisterPageAction.java
+C:\Users\navendushukla\workspace\automation\src\test\java\Utils\GetPage.java
+C:\Users\navendushukla\workspace\automation\src\test\java\JukinMedia\automation\action\LoginPageAction.java
+C:\Users\navendushukla\workspace\automation\src\test\java\JukinMedia\automation\Runner.java
+C:\Users\navendushukla\workspace\automation\src\test\java\JukinMedia\automation\stepdefs\ForgotPasswordStepDef.java
