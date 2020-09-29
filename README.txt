@@ -1,4 +1,7 @@
 JUKIN UI Automation
+* Scripts are written using java-selenium
+* Cucumber BDD framework
+* Runner class (Runner.java) is also added in case local execution is required
 
 Pre-requisites : Java and Maven should be installed
 
