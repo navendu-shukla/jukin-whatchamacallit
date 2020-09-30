@@ -6,7 +6,7 @@
         "before": [
           {
             "result": {
-              "duration": 273624,
+              "duration": 582958,
               "status": "passed"
             },
             "match": {
@@ -14,14 +14,14 @@
             }
           }
         ],
-        "line": 5,
-        "name": "Verify elements of login forms are displayed",
+        "line": 43,
+        "name": "Verify error messages \"Incorrect email/password combination\" is displayed when user enters invalid mail ID",
         "description": "",
-        "id": "login-page;verify-elements-of-login-forms-are-displayed",
+        "id": "login-page;verify-error-messages-\"incorrect-email/password-combination\"-is-displayed-when-user-enters-invalid-mail-id;;2",
         "after": [
           {
             "result": {
-              "duration": 264811,
+              "duration": 142841,
               "status": "passed"
             },
             "match": {
@@ -30,347 +30,11 @@
           }
         ],
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 521473410,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "User launches the Login Page",
-            "match": {
-              "location": "LoginPageStepDef.launchLoginPage()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 60307998,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "Verify form heading \"Fill fields below to log in.\" is displayed",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Fill fields below to log in.",
-                  "offset": 21
-                }
-              ],
-              "location": "LoginPageStepDef.verifyHeading(String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 84902108,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "Verify Username text field is displayed",
-            "match": {
-              "location": "LoginPageStepDef.verifyUserNameField()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 60615012,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "Verify Password text field is displayed",
-            "match": {
-              "location": "LoginPageStepDef.verifyPasswordTextField()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 42162590,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "Verify Forgot Password link is displayed",
-            "match": {
-              "location": "LoginPageStepDef.verifyForgotPasswordLinkIsDisplayed()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 54561906,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "Verify Register link is displayed",
-            "match": {
-              "location": "LoginPageStepDef.verifyRegisterLinkIsDisplayed()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 51348453,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "Verify login button is displayed",
-            "match": {
-              "location": "LoginPageStepDef.verifyloginButtonIsDisplayed()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 24664602,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "Verify login button is disabled",
-            "match": {
-              "location": "LoginPageStepDef.verifyLoginButtonIsDisabled()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "line": 4,
-            "name": "@Login"
-          }
-        ]
-      },
-      {
-        "before": [
-          {
-            "result": {
-              "duration": 195247,
-              "status": "passed"
-            },
-            "match": {
-              "location": "BaseTest.printScenarioName(Scenario)"
-            }
-          }
-        ],
-        "line": 17,
-        "name": "Verify user is able to login using valid credentials",
-        "description": "",
-        "id": "login-page;verify-user-is-able-to-login-using-valid-credentials",
-        "after": [
-          {
-            "result": {
-              "duration": 116406,
-              "status": "passed"
-            },
-            "match": {
-              "location": "BaseTest.screenShotAndConsoleLog(Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 337546516,
-              "status": "passed"
-            },
-            "line": 18,
-            "name": "User launches the Login Page",
-            "match": {
-              "location": "LoginPageStepDef.launchLoginPage()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 533846293,
-              "status": "passed"
-            },
-            "line": 19,
-            "name": "User enters valid username and password",
-            "match": {
-              "location": "LoginPageStepDef.enterValidUsernameAndPassword()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 321124936,
-              "status": "passed"
-            },
-            "line": 20,
-            "name": "User clicks on login Button",
-            "match": {
-              "location": "LoginPageStepDef.userClicksOnLoginButton()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 10897169,
-              "status": "passed"
-            },
-            "line": 21,
-            "name": "Verify that user is able to login successfully",
-            "match": {
-              "location": "LoginPageStepDef.verifyUserIsOnSuccessPage()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "line": 16,
-            "name": "@Login"
-          }
-        ]
-      },
-      {
-        "before": [
-          {
-            "result": {
-              "duration": 88580,
-              "status": "passed"
-            },
-            "match": {
-              "location": "BaseTest.printScenarioName(Scenario)"
-            }
-          }
-        ],
-        "line": 25,
-        "name": "Verify user is not able to login using invalid credentials",
-        "description": "",
-        "id": "login-page;verify-user-is-not-able-to-login-using-invalid-credentials",
-        "after": [
-          {
-            "result": {
-              "duration": 81160,
-              "status": "passed"
-            },
-            "match": {
-              "location": "BaseTest.screenShotAndConsoleLog(Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 771082454,
-              "status": "passed"
-            },
-            "line": 26,
-            "name": "User launches the Login Page",
-            "match": {
-              "location": "LoginPageStepDef.launchLoginPage()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 192981049,
-              "status": "passed"
-            },
-            "line": 27,
-            "name": "User enter user name \"abc@test.com\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "abc@test.com",
-                  "offset": 22
-                }
-              ],
-              "location": "LoginPageStepDef.enterUserName(String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 159231684,
-              "status": "passed"
-            },
-            "line": 28,
-            "name": "User enter password \"A@123\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "A@123",
-                  "offset": 21
-                }
-              ],
-              "location": "LoginPageStepDef.enterPassword(String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 392082915,
-              "status": "passed"
-            },
-            "line": 29,
-            "name": "User clicks on login Button",
-            "match": {
-              "location": "LoginPageStepDef.userClicksOnLoginButton()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 59179186,
-              "status": "passed"
-            },
-            "line": 30,
-            "name": "Verify user is not able to login using invalid credentials",
-            "match": {
-              "location": "LoginPageStepDef.verifyUserIsNotAbleToLoginUsingInvalidCredentials()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "line": 24,
-            "name": "@Login"
-          }
-        ]
-      },
-      {
-        "before": [
-          {
-            "result": {
-              "duration": 62609,
-              "status": "passed"
-            },
-            "match": {
-              "location": "BaseTest.printScenarioName(Scenario)"
-            }
-          }
-        ],
-        "line": 34,
-        "name": "Verify login button should get enabled when user has filled username and password fields",
-        "description": "",
-        "id": "login-page;verify-login-button-should-get-enabled-when-user-has-filled-username-and-password-fields",
-        "after": [
-          {
-            "result": {
-              "duration": 83942,
-              "status": "passed"
-            },
-            "match": {
-              "location": "BaseTest.screenShotAndConsoleLog(Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 357825723,
+              "duration": 619921735,
               "status": "passed"
             },
             "line": 35,
@@ -382,25 +46,28 @@
           },
           {
             "result": {
-              "duration": 261149923,
+              "duration": 241697153,
               "status": "passed"
             },
             "line": 36,
-            "name": "User enter user name \"abc@test.com\"",
+            "name": "User enter user name \"abc\"",
             "match": {
               "arguments": [
                 {
-                  "val": "abc@test.com",
+                  "val": "abc",
                   "offset": 22
                 }
               ],
               "location": "LoginPageStepDef.enterUserName(String)"
             },
+            "matchedColumns": [
+              0
+            ],
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 187782667,
+              "duration": 183028575,
               "status": "passed"
             },
             "line": 37,
@@ -418,660 +85,25 @@
           },
           {
             "result": {
-              "duration": 21879672,
+              "duration": 293844215,
               "status": "passed"
             },
             "line": 38,
-            "name": "Verify login button is enabled",
+            "name": "User clicks on login Button",
             "match": {
-              "location": "LoginPageStepDef.verifyLoginButtonIsEnabled()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "line": 33,
-            "name": "@Login"
-          }
-        ]
-      },
-      {
-        "before": [
-          {
-            "result": {
-              "duration": 49623,
-              "status": "passed"
-            },
-            "match": {
-              "location": "BaseTest.printScenarioName(Scenario)"
-            }
-          }
-        ],
-        "line": 41,
-        "name": "Verify mouse cursor should be enabled when user hovers over login button after filling username and password fields",
-        "description": "",
-        "id": "login-page;verify-mouse-cursor-should-be-enabled-when-user-hovers-over-login-button-after-filling-username-and-password-fields",
-        "after": [
-          {
-            "result": {
-              "duration": 117333,
-              "status": "passed"
-            },
-            "match": {
-              "location": "BaseTest.screenShotAndConsoleLog(Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 228139806,
-              "status": "passed"
-            },
-            "line": 42,
-            "name": "User launches the Login Page",
-            "match": {
-              "location": "LoginPageStepDef.launchLoginPage()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 173198073,
-              "status": "passed"
-            },
-            "line": 43,
-            "name": "User enter user name \"abc@test.com\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "abc@test.com",
-                  "offset": 22
-                }
-              ],
-              "location": "LoginPageStepDef.enterUserName(String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 159989481,
-              "status": "passed"
-            },
-            "line": 44,
-            "name": "User enter password \"A@123\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "A@123",
-                  "offset": 21
-                }
-              ],
-              "location": "LoginPageStepDef.enterPassword(String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 173419292,
-              "error_message": "java.lang.AssertionError: [Assertion Failed]: Cursor is not enabled expected [true] but found [false]\r\n\tat org.testng.Assert.fail(Assert.java:99)\r\n\tat org.testng.Assert.failNotEquals(Assert.java:1037)\r\n\tat org.testng.Assert.assertTrue(Assert.java:45)\r\n\tat JukinMedia.automation.action.LoginPageAction.verifyCursorIsEnabledWhenUserHoverOverLoginButton(LoginPageAction.java:147)\r\n\tat JukinMedia.automation.stepdefs.LoginPageStepDef.verifyCursorIsEnabledWhenUserHoverOverLoginButton(LoginPageStepDef.java:108)\r\n\tat ✽.Then Verify cursor should be enabled when user hover over the login button(LoginPage.feature:45)\r\n",
-              "status": "failed"
-            },
-            "line": 45,
-            "name": "Verify cursor should be enabled when user hover over the login button",
-            "match": {
-              "location": "LoginPageStepDef.verifyCursorIsEnabledWhenUserHoverOverLoginButton()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "line": 40,
-            "name": "@Login"
-          }
-        ]
-      }
-    ],
-    "name": "Login Page",
-    "description": "",
-    "id": "login-page",
-    "keyword": "Feature",
-    "uri": "LoginPage.feature"
-  },
-  {
-    "line": 1,
-    "elements": [
-      {
-        "before": [
-          {
-            "result": {
-              "duration": 69565,
-              "status": "passed"
-            },
-            "match": {
-              "location": "BaseTest.printScenarioName(Scenario)"
-            }
-          }
-        ],
-        "line": 4,
-        "name": "Verify on clicking register link user is directed to register page",
-        "description": "",
-        "id": "register-page;verify-on-clicking-register-link-user-is-directed-to-register-page",
-        "after": [
-          {
-            "result": {
-              "duration": 71884,
-              "status": "passed"
-            },
-            "match": {
-              "location": "BaseTest.screenShotAndConsoleLog(Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 343959043,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "User launches the Login Page",
-            "match": {
-              "location": "LoginPageStepDef.launchLoginPage()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 1898816370,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "User clicks on Register link",
-            "match": {
-              "location": "LoginPageStepDef.userClicksOnRegisterLink()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 9120009,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "Verify user lands on Registration page",
-            "match": {
-              "location": "LoginPageStepDef.verifyUserLandsOnRegisterPage()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "line": 3,
-            "name": "@RegisterPage"
-          }
-        ]
-      },
-      {
-        "before": [
-          {
-            "result": {
-              "duration": 80233,
-              "status": "passed"
-            },
-            "match": {
-              "location": "BaseTest.printScenarioName(Scenario)"
-            }
-          }
-        ],
-        "line": 10,
-        "name": "Verify register page form elements",
-        "description": "",
-        "id": "register-page;verify-register-page-form-elements",
-        "after": [
-          {
-            "result": {
-              "duration": 66320,
-              "status": "passed"
-            },
-            "match": {
-              "location": "BaseTest.screenShotAndConsoleLog(Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 44904390,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "Verify form heading \"Fill out the form to create your account.\" is displayed",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Fill out the form to create your account.",
-                  "offset": 21
-                }
-              ],
-              "location": "LoginPageStepDef.verifyHeading(String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 39668443,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "Verify email field is displayed on register page",
-            "match": {
-              "location": "RegisterPageStepDef.verifyEmailFieldIsDisplayed()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 37738239,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "Verify password field is displayed on register page",
-            "match": {
-              "location": "RegisterPageStepDef.verifyPasswordFieldIsDisplayed()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 39080384,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "Verify confirm password field is displayed on register page",
-            "match": {
-              "location": "RegisterPageStepDef.verifyConfirmPasswordFieldIsDisplayed()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 33498466,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "Verify submit button is displayed on register page",
-            "match": {
-              "location": "RegisterPageStepDef.verifySubmitButtonIsDisplayed()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 31485246,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "Verify Back to Login button is displayed on register page",
-            "match": {
-              "location": "RegisterPageStepDef.verifyBackToLoginButtonIsDisplayed()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "line": 9,
-            "name": "@RegisterPage"
-          }
-        ]
-      },
-      {
-        "before": [
-          {
-            "result": {
-              "duration": 64464,
-              "status": "passed"
-            },
-            "match": {
-              "location": "BaseTest.printScenarioName(Scenario)"
-            }
-          }
-        ],
-        "line": 19,
-        "name": "Verify user is able to successfully register on entering valid email and password",
-        "description": "",
-        "id": "register-page;verify-user-is-able-to-successfully-register-on-entering-valid-email-and-password",
-        "after": [
-          {
-            "result": {
-              "duration": 64464,
-              "status": "passed"
-            },
-            "match": {
-              "location": "BaseTest.screenShotAndConsoleLog(Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 229922532,
-              "status": "passed"
-            },
-            "line": 20,
-            "name": "On register page user enters email \"abc@test.com\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "abc@test.com",
-                  "offset": 36
-                }
-              ],
-              "location": "RegisterPageStepDef.enterEmail(String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 177332570,
-              "status": "passed"
-            },
-            "line": 21,
-            "name": "On register page user enters password \"A@123\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "A@123",
-                  "offset": 39
-                }
-              ],
-              "location": "RegisterPageStepDef.enterPassword(String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 184961099,
-              "status": "passed"
-            },
-            "line": 22,
-            "name": "On register page user enters confirmation password \"A@123\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "A@123",
-                  "offset": 52
-                }
-              ],
-              "location": "RegisterPageStepDef.enterConfirmationPassword(String)"
+              "location": "LoginPageStepDef.userClicksOnLoginButton()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 290554242,
-              "status": "passed"
-            },
-            "line": 23,
-            "name": "User clicks on submit button of register page",
-            "match": {
-              "location": "RegisterPageStepDef.clickOnSubmitButton()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 30378695,
-              "status": "passed"
-            },
-            "line": 24,
-            "name": "Verify Registration successful page is displayed",
-            "match": {
-              "location": "RegisterPageStepDef.verifyRegistationSuccessfulPageIsDisplayed()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "line": 18,
-            "name": "@RegisterPage"
-          }
-        ]
-      },
-      {
-        "before": [
-          {
-            "result": {
-              "duration": 45450,
-              "status": "passed"
-            },
-            "match": {
-              "location": "BaseTest.printScenarioName(Scenario)"
-            }
-          }
-        ],
-        "line": 27,
-        "name": "Verify user is redirected to Exception page if user clicks on submit button leaving every field blank",
-        "description": "",
-        "id": "register-page;verify-user-is-redirected-to-exception-page-if-user-clicks-on-submit-button-leaving-every-field-blank",
-        "after": [
-          {
-            "result": {
-              "duration": 63536,
-              "status": "passed"
-            },
-            "match": {
-              "location": "BaseTest.screenShotAndConsoleLog(Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 324326330,
-              "status": "passed"
-            },
-            "line": 28,
-            "name": "User launches the Login Page",
-            "match": {
-              "location": "LoginPageStepDef.launchLoginPage()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 1727214124,
-              "status": "passed"
-            },
-            "line": 29,
-            "name": "User clicks on Register link",
-            "match": {
-              "location": "LoginPageStepDef.userClicksOnRegisterLink()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 472655743,
-              "status": "passed"
-            },
-            "line": 30,
-            "name": "User clicks on submit button of register page",
-            "match": {
-              "location": "RegisterPageStepDef.clickOnSubmitButton()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 7518152,
-              "status": "passed"
-            },
-            "line": 31,
-            "name": "Verify exception page is displayed",
-            "match": {
-              "location": "RegisterPageStepDef.verifyExceptionPageIsLaunched()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "line": 26,
-            "name": "@RegisterPage"
-          }
-        ]
-      },
-      {
-        "before": [
-          {
-            "result": {
-              "duration": 46377,
-              "status": "passed"
-            },
-            "match": {
-              "location": "BaseTest.printScenarioName(Scenario)"
-            }
-          }
-        ],
-        "line": 34,
-        "name": "Verify is user enters invalid email a fail message is displayed",
-        "description": "",
-        "id": "register-page;verify-is-user-enters-invalid-email-a-fail-message-is-displayed",
-        "after": [
-          {
-            "result": {
-              "duration": 97391,
-              "status": "passed"
-            },
-            "match": {
-              "location": "BaseTest.screenShotAndConsoleLog(Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 274009761,
-              "status": "passed"
-            },
-            "line": 35,
-            "name": "User launches the Login Page",
-            "match": {
-              "location": "LoginPageStepDef.launchLoginPage()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 287646875,
-              "status": "passed"
-            },
-            "line": 36,
-            "name": "User clicks on Register link",
-            "match": {
-              "location": "LoginPageStepDef.userClicksOnRegisterLink()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 226009252,
-              "status": "passed"
-            },
-            "line": 37,
-            "name": "On register page user enters email \"abc.com\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "abc.com",
-                  "offset": 36
-                }
-              ],
-              "location": "RegisterPageStepDef.enterEmail(String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 179117152,
-              "status": "passed"
-            },
-            "line": 38,
-            "name": "On register page user enters password \"A@123\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "A@123",
-                  "offset": 39
-                }
-              ],
-              "location": "RegisterPageStepDef.enterPassword(String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 190012929,
+              "duration": 34801191,
               "status": "passed"
             },
             "line": 39,
-            "name": "On register page user enters confirmation password \"A@123\"",
+            "name": "Verify on login page flash message is displayed when user clicks on submit button with invalid email id",
             "match": {
-              "arguments": [
-                {
-                  "val": "A@123",
-                  "offset": 52
-                }
-              ],
-              "location": "RegisterPageStepDef.enterConfirmationPassword(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 330843669,
-              "status": "passed"
-            },
-            "line": 40,
-            "name": "User clicks on submit button of register page",
-            "match": {
-              "location": "RegisterPageStepDef.clickOnSubmitButton()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 49473437,
-              "status": "passed"
-            },
-            "line": 41,
-            "name": "Verify fail message \"Please enter a valid Email.\" is displayed",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Please enter a valid Email.",
-                  "offset": 21
-                }
-              ],
-              "location": "RegisterPageStepDef.verifyFailMessageIsDisplayed(String)"
+              "location": "LoginPageStepDef.verifyIncorrectEmailPasswordCombinationTextIsDisplayedForInvalidMailID()"
             },
             "keyword": "Then "
           }
@@ -1079,153 +111,11 @@
         "tags": [
           {
             "line": 33,
-            "name": "@RegisterPage"
-          }
-        ]
-      },
-      {
-        "before": [
-          {
-            "result": {
-              "duration": 55188,
-              "status": "passed"
-            },
-            "match": {
-              "location": "BaseTest.printScenarioName(Scenario)"
-            }
-          }
-        ],
-        "line": 44,
-        "name": "Verify on password and confirm password field mismatch fail message is displayed",
-        "description": "",
-        "id": "register-page;verify-on-password-and-confirm-password-field-mismatch-fail-message-is-displayed",
-        "after": [
-          {
-            "result": {
-              "duration": 61216,
-              "status": "passed"
-            },
-            "match": {
-              "location": "BaseTest.screenShotAndConsoleLog(Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 309455128,
-              "status": "passed"
-            },
-            "line": 45,
-            "name": "User launches the Login Page",
-            "match": {
-              "location": "LoginPageStepDef.launchLoginPage()"
-            },
-            "keyword": "Given "
+            "name": "@Login"
           },
           {
-            "result": {
-              "duration": 392949234,
-              "status": "passed"
-            },
-            "line": 46,
-            "name": "User clicks on Register link",
-            "match": {
-              "location": "LoginPageStepDef.userClicksOnRegisterLink()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 201036245,
-              "status": "passed"
-            },
-            "line": 47,
-            "name": "On register page user enters email \"abc@test.com\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "abc@test.com",
-                  "offset": 36
-                }
-              ],
-              "location": "RegisterPageStepDef.enterEmail(String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 171086999,
-              "status": "passed"
-            },
-            "line": 48,
-            "name": "On register page user enters password \"A@123a\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "A@123a",
-                  "offset": 39
-                }
-              ],
-              "location": "RegisterPageStepDef.enterPassword(String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 154535564,
-              "status": "passed"
-            },
-            "line": 49,
-            "name": "On register page user enters confirmation password \"A@123\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "A@123",
-                  "offset": 52
-                }
-              ],
-              "location": "RegisterPageStepDef.enterConfirmationPassword(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 314645625,
-              "status": "passed"
-            },
-            "line": 50,
-            "name": "User clicks on submit button of register page",
-            "match": {
-              "location": "RegisterPageStepDef.clickOnSubmitButton()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 39139283,
-              "status": "passed"
-            },
-            "line": 51,
-            "name": "Verify fail message \"Password confirmation must must match Password\" is displayed",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Password confirmation must must match Password",
-                  "offset": 21
-                }
-              ],
-              "location": "RegisterPageStepDef.verifyFailMessageIsDisplayed(String)"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "line": 43,
-            "name": "@RegisterPage"
+            "line": 33,
+            "name": "@na"
           }
         ]
       },
@@ -1241,14 +131,14 @@
             }
           }
         ],
-        "line": 54,
-        "name": "Verify on hovering over tool tip image tool tip text is displayed",
+        "line": 44,
+        "name": "Verify error messages \"Incorrect email/password combination\" is displayed when user enters invalid mail ID",
         "description": "",
-        "id": "register-page;verify-on-hovering-over-tool-tip-image-tool-tip-text-is-displayed",
+        "id": "login-page;verify-error-messages-\"incorrect-email/password-combination\"-is-displayed-when-user-enters-invalid-mail-id;;3",
         "after": [
           {
             "result": {
-              "duration": 81624,
+              "duration": 90898,
               "status": "passed"
             },
             "match": {
@@ -1257,25 +147,92 @@
           }
         ],
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 268940771,
+              "duration": 241316397,
               "status": "passed"
             },
-            "line": 55,
-            "name": "Verify on hovering over tool tip image tool tip text is displayed",
+            "line": 35,
+            "name": "User launches the Login Page",
             "match": {
-              "location": "RegisterPageStepDef.verifyOnHoveringOverToolTipImageToolTipTextIsDisplayed()"
+              "location": "LoginPageStepDef.launchLoginPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 169055229,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "User enter user name \"@\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "@",
+                  "offset": 22
+                }
+              ],
+              "location": "LoginPageStepDef.enterUserName(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 173003290,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "User enter password \"A@123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "A@123",
+                  "offset": 21
+                }
+              ],
+              "location": "LoginPageStepDef.enterPassword(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 304312399,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "User clicks on login Button",
+            "match": {
+              "location": "LoginPageStepDef.userClicksOnLoginButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 51495931,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "Verify on login page flash message is displayed when user clicks on submit button with invalid email id",
+            "match": {
+              "location": "LoginPageStepDef.verifyIncorrectEmailPasswordCombinationTextIsDisplayedForInvalidMailID()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "line": 53,
-            "name": "@RegisterPage"
+            "line": 33,
+            "name": "@Login"
+          },
+          {
+            "line": 33,
+            "name": "@na"
           }
         ]
       },
@@ -1283,7 +240,7 @@
         "before": [
           {
             "result": {
-              "duration": 66782,
+              "duration": 73738,
               "status": "passed"
             },
             "match": {
@@ -1291,14 +248,248 @@
             }
           }
         ],
-        "line": 58,
-        "name": "Verify tool tip disappers when user stops hovering over tool tip image",
+        "line": 45,
+        "name": "Verify error messages \"Incorrect email/password combination\" is displayed when user enters invalid mail ID",
         "description": "",
-        "id": "register-page;verify-tool-tip-disappers-when-user-stops-hovering-over-tool-tip-image",
+        "id": "login-page;verify-error-messages-\"incorrect-email/password-combination\"-is-displayed-when-user-enters-invalid-mail-id;;4",
         "after": [
           {
             "result": {
-              "duration": 96000,
+              "duration": 87188,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseTest.screenShotAndConsoleLog(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 310640985,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "User launches the Login Page",
+            "match": {
+              "location": "LoginPageStepDef.launchLoginPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 178371412,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "User enter user name \".com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": ".com",
+                  "offset": 22
+                }
+              ],
+              "location": "LoginPageStepDef.enterUserName(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 170444679,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "User enter password \"A@123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "A@123",
+                  "offset": 21
+                }
+              ],
+              "location": "LoginPageStepDef.enterPassword(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 272342978,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "User clicks on login Button",
+            "match": {
+              "location": "LoginPageStepDef.userClicksOnLoginButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 46872160,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "Verify on login page flash message is displayed when user clicks on submit button with invalid email id",
+            "match": {
+              "location": "LoginPageStepDef.verifyIncorrectEmailPasswordCombinationTextIsDisplayedForInvalidMailID()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 33,
+            "name": "@Login"
+          },
+          {
+            "line": 33,
+            "name": "@na"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 60290,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseTest.printScenarioName(Scenario)"
+            }
+          }
+        ],
+        "line": 46,
+        "name": "Verify error messages \"Incorrect email/password combination\" is displayed when user enters invalid mail ID",
+        "description": "",
+        "id": "login-page;verify-error-messages-\"incorrect-email/password-combination\"-is-displayed-when-user-enters-invalid-mail-id;;5",
+        "after": [
+          {
+            "result": {
+              "duration": 53333,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseTest.screenShotAndConsoleLog(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 223104671,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "User launches the Login Page",
+            "match": {
+              "location": "LoginPageStepDef.launchLoginPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 193033453,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "User enter user name \"@test.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "@test.com",
+                  "offset": 22
+                }
+              ],
+              "location": "LoginPageStepDef.enterUserName(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 201547781,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "User enter password \"A@123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "A@123",
+                  "offset": 21
+                }
+              ],
+              "location": "LoginPageStepDef.enterPassword(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 276513184,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "User clicks on login Button",
+            "match": {
+              "location": "LoginPageStepDef.userClicksOnLoginButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 35421715,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "Verify on login page flash message is displayed when user clicks on submit button with invalid email id",
+            "match": {
+              "location": "LoginPageStepDef.verifyIncorrectEmailPasswordCombinationTextIsDisplayedForInvalidMailID()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 33,
+            "name": "@Login"
+          },
+          {
+            "line": 33,
+            "name": "@na"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 130320,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseTest.printScenarioName(Scenario)"
+            }
+          }
+        ],
+        "line": 49,
+        "name": "Verify error message \"Incorrect password\" is displayed when user enters incorrect password",
+        "description": "",
+        "id": "login-page;verify-error-message-\"incorrect-password\"-is-displayed-when-user-enters-incorrect-password",
+        "after": [
+          {
+            "result": {
+              "duration": 63071,
               "status": "passed"
             },
             "match": {
@@ -1311,30 +502,93 @@
         "steps": [
           {
             "result": {
-              "duration": 188991711,
-              "error_message": "java.lang.AssertionError: [Assrtion Failed]: Tool tip is displayed expected [false] but found [true]\r\n\tat org.testng.Assert.fail(Assert.java:99)\r\n\tat org.testng.Assert.failNotEquals(Assert.java:1037)\r\n\tat org.testng.Assert.assertFalse(Assert.java:67)\r\n\tat JukinMedia.automation.action.RegisterPageAction.verifyToolTipDisappears(RegisterPageAction.java:110)\r\n\tat JukinMedia.automation.stepdefs.RegisterPageStepDef.verifyToolTipDisappears(RegisterPageStepDef.java:67)\r\n\tat ✽.Then Verify tool tip disappers when user stops hovering over tool tip image(RegisterPage.feature:59)\r\n",
-              "status": "failed"
+              "duration": 256172296,
+              "status": "passed"
             },
-            "line": 59,
-            "name": "Verify tool tip disappers when user stops hovering over tool tip image",
+            "line": 50,
+            "name": "User launches the Login Page",
             "match": {
-              "location": "RegisterPageStepDef.verifyToolTipDisappears()"
+              "location": "LoginPageStepDef.launchLoginPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 193612700,
+              "status": "passed"
+            },
+            "line": 51,
+            "name": "User enter user name \"quality@jukinmedia.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "quality@jukinmedia.com",
+                  "offset": 22
+                }
+              ],
+              "location": "LoginPageStepDef.enterUserName(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 183957504,
+              "status": "passed"
+            },
+            "line": 52,
+            "name": "User enter password \"A@123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "A@123",
+                  "offset": 21
+                }
+              ],
+              "location": "LoginPageStepDef.enterPassword(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 306610370,
+              "status": "passed"
+            },
+            "line": 53,
+            "name": "User clicks on login Button",
+            "match": {
+              "location": "LoginPageStepDef.userClicksOnLoginButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 40108558,
+              "status": "passed"
+            },
+            "line": 54,
+            "name": "Verify on Login page Incorrect password message is displayed",
+            "match": {
+              "location": "LoginPageStepDef.verifyIncorrectPasswordMessageIsDisplayed()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "line": 57,
-            "name": "@RegisterPage"
+            "line": 48,
+            "name": "@Login"
+          },
+          {
+            "line": 48,
+            "name": "@na"
           }
         ]
       }
     ],
-    "name": "Register Page",
+    "name": "Login Page",
     "description": "",
-    "id": "register-page",
+    "id": "login-page",
     "keyword": "Feature",
-    "uri": "RegisterPage.feature"
+    "uri": "LoginPage.feature"
   }
 ]

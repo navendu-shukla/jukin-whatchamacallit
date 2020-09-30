@@ -4,6 +4,7 @@ import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.Reporter;
 
@@ -40,8 +41,11 @@ public class ForgotPasswordPageAction extends GetPage{
 	}
 	
 	public void verifyFlashMessageIsDisplayed() {
-		Assert.assertTrue(getWebElement(flashMessage).isDisplayed() , "[Assertion Failed]: flash Message is not displayed");
-		Reporter.log("[Assertion Passed]: flash Message link is displayed" , true);
+		WebElement flashmessage = getWebElement(flashMessage);
+		wait.waitForPageToLoadCompletely();
+		Assert.assertTrue(flashmessage.isDisplayed() , "[Assertion Failed]: flash Message is not displayed");
+		Assert.assertTrue(flashmessage.getText().contains("Please enter a valid email") , "[Assertion Failed]: Correct flash message is displayed");
+		Reporter.log("[Assertion Passed]: flash Message is displayed: Please enter a valid email" , true);
 	}
 	
 	public void enterEmail(String emailId) {

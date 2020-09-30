@@ -29,8 +29,29 @@ When User enter password "A@123"
 And User clicks on login Button
 Then Verify user is not able to login using invalid credentials
 
-invalid email
-valid email wrong password
+
+@Login
+Scenario Outline: Verify error messages "Incorrect email/password combination" is displayed when user enters invalid mail ID
+Given User launches the Login Page
+When User enter user name "<mailId>"
+When User enter password "A@123"
+And User clicks on login Button
+Then Verify on login page flash message is displayed when user clicks on submit button with invalid email id
+
+Examples:
+|mailId|
+|abc|
+|@|
+|.com|
+|@test.com|
+
+@Login
+Scenario: Verify error message "Incorrect password" is displayed when user enters incorrect password 
+Given User launches the Login Page
+When User enter user name "quality@jukinmedia.com"
+When User enter password "A@123"
+And User clicks on login Button
+Then Verify on Login page Incorrect password message is displayed
 
 @Login
 Scenario: Verify login button should get enabled when user has filled username and password fields

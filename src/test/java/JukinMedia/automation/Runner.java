@@ -9,7 +9,7 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 
 
 @CucumberOptions(features = "src/test/resources/FeatureFiles/", glue = "JukinMedia.automation", tags = {
-"@RegisterPage" }, plugin = { "pretty" , "json:target/cucumber-reports/CucumberTestReport.json" , "html:target/cucumber-reports/cucumber-pretty"})
+"@na" }, plugin = { "pretty" , "json:target/cucumber-reports/CucumberTestReport.json" , "html:target/cucumber-reports/cucumber-pretty"})
 public class Runner extends AbstractTestNGCucumberTests {
 	
 	BaseTest bst = new BaseTest();

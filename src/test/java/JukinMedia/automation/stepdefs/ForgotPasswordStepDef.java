@@ -25,7 +25,7 @@ public class ForgotPasswordStepDef {
 		test.forgotPasswordPage.verifyBackToLoginLinkIsDisplayed();
 	}
 	
-	@Then("Verify flash message is displayed when user clicks on submit button with email field blank")
+	@Then("Verify on forgot password flash message is displayed when user clicks on submit button with invalid email id")
 	public void verifyFlashMessageIsDisplayed() {
 		test.forgotPasswordPage.verifyFlashMessageIsDisplayed();
 	}

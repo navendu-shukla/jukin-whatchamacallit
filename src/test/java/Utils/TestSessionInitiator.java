@@ -46,7 +46,6 @@ public class TestSessionInitiator {
 
 
 	public void configureBrowser() {
-		System.out.println("Driver called");
 		driver = wd.getChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();

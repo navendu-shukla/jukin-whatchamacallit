@@ -62,6 +62,11 @@ public class LoginPageStepDef {
 	public void verifyUserIsNotAbleToLoginUsingInvalidCredentials() {
 		test.loginPage.verifyIncorrectEmailPasswordCombinationTextIsDisplayed();
 	}
+	
+	@Then("Verify on login page flash message is displayed when user clicks on submit button with invalid email id")
+	public void verifyIncorrectEmailPasswordCombinationTextIsDisplayedForInvalidMailID() {
+		test.loginPage.verifyIncorrectEmailPasswordCombinationTextIsDisplayedForInvalidMailID();
+	}
 
 	@Then("Verify form heading \"(.*)\" is displayed")
 	public void verifyHeading(String heading) {
@@ -106,6 +111,11 @@ public class LoginPageStepDef {
 	@Then("Verify cursor should be enabled when user hover over the login button")
 	public void verifyCursorIsEnabledWhenUserHoverOverLoginButton() {
 		test.loginPage.verifyCursorIsEnabledWhenUserHoverOverLoginButton();
+	}
+	
+	@Then("Verify on Login page Incorrect password message is displayed")
+	public void verifyIncorrectPasswordMessageIsDisplayed() {
+		test.loginPage.verifyIncorrectPasswordMessageIsDisplayed();
 	}
 	
 	

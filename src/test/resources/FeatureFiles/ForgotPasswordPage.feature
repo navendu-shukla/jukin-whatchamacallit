@@ -19,13 +19,29 @@ When User clicks submit button on forgot password page
 Then Verify password reset successfull modal is diaplayed
 And User clicks on Ok button of Password reset successfull modal
 
-invalidid
 @ForgotPassword
 Scenario: Verify that flash message is displayed id user clicks on submit button without email
 Given User launches the Login Page
 When User clicks on Forgot Password link
 When User clicks submit button on forgot password page
-Then Verify flash message is displayed when user clicks on submit button with email field blank
+Then Verify on forgot password flash message is displayed when user clicks on submit button with invalid email id
+
+@ForgotPassowrd
+Scenario Outline: Verify flash message "Please enter a valid email" is displayed if user enters invalid mail id
+Given User launches the Login Page
+When User clicks on Forgot Password link
+Then Verify user lands on Forgot Password page
+When User enters email "<mailId>" on forgot password page
+When User clicks submit button on forgot password page
+Then Verify on forgot password flash message is displayed when user clicks on submit button with invalid email id
+
+Examples:
+|mailId|
+|abc|
+|@|
+|.com|
+|@test.com|
+||
 
 @ForgotPassword
 Scenario: Verify on clicking Back to Login user is redirected to Login Page

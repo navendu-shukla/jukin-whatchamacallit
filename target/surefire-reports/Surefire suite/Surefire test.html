@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Surefire test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/2/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Sep 29 04:23:53 IST 2020</td>
+<td>Started on:</td><td>Wed Sep 30 19:03:04 IST 2020</td>
 </tr>
-<tr><td>Total time:</td><td>23 seconds (23026 ms)</td>
+<tr><td>Total time:</td><td>11 seconds (11921 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,8 +67,8 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
@@ -76,230 +76,54 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='JukinMedia.automation.Runner.feature()'><b>feature</b><br>Test class: JukinMedia.automation.Runner<br>Test method: Runs Cucumber Feature<br>Parameters: Login Page<br/>
-<a href="#Output-302987494" onClick='toggleBox("Output-302987494", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-991671211" onClick='toggleBox("Output-991671211", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-302987494" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-302987494">
+<a href="#Output-991671211" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-991671211">
 User launched login URL<br/>
-[Assertion Passed]: Login form heading "Fill fields below to log in." is displayed<br/>
-[Assertion Passed]: Username field is displayed<br/>
-[Assertion Passed]: Password field is displayed<br/>
-[Assertion Passed]: Forgot Password link is displayed<br/>
-[Assertion Passed]: Register link is displayed<br/>
-[Assertion Passed]: Login Button is displayed<br/>
-[Assertion Passed]: Login button is disabled<br/>
-*************************************<br/>
-Feature Name> Scenario Name: Verify elements of login forms are displayed<br/>
-Scenario Result: PASSED<br/>
-User launched login URL<br/>
-User enters valid username and password<br/>
-User clicks on login button<br/>
-[Assertion Passed]: User is able to login successfully<br/>
-*************************************<br/>
-Feature Name> Scenario Name: Verify user is able to login using valid credentials<br/>
-Scenario Result: PASSED<br/>
-User launched login URL<br/>
-User enters the user name abc@test.com<br/>
+User enters the user name abc<br/>
 User enters the user name A@123<br/>
 User clicks on login button<br/>
 [Assertion Passed]: User is able to see Incorrect email/password combination text<br/>
-User is not able to login<br/>
 *************************************<br/>
-Feature Name> Scenario Name: Verify user is not able to login using invalid credentials<br/>
+Feature Name> Scenario Name: Verify error messages "Incorrect email/password combination" is displayed when user enters invalid mail ID<br/>
 Scenario Result: PASSED<br/>
 User launched login URL<br/>
-User enters the user name abc@test.com<br/>
+User enters the user name @<br/>
 User enters the user name A@123<br/>
-[Assertion Passed]: Login Button is enabled<br/>
+User clicks on login button<br/>
+[Assertion Passed]: User is able to see Incorrect email/password combination text<br/>
 *************************************<br/>
-Feature Name> Scenario Name: Verify login button should get enabled when user has filled username and password fields<br/>
+Feature Name> Scenario Name: Verify error messages "Incorrect email/password combination" is displayed when user enters invalid mail ID<br/>
 Scenario Result: PASSED<br/>
 User launched login URL<br/>
-User enters the user name abc@test.com<br/>
+User enters the user name .com<br/>
 User enters the user name A@123<br/>
-User hover over login Button<br/>
-Found cursor style: not-allowed<br/>
+User clicks on login button<br/>
+[Assertion Passed]: User is able to see Incorrect email/password combination text<br/>
 *************************************<br/>
-Feature Name> Scenario Name: Verify mouse cursor should be enabled when user hovers over login button after filling username and password fields<br/>
-Scenario Result: FAILED<br/>
+Feature Name> Scenario Name: Verify error messages "Incorrect email/password combination" is displayed when user enters invalid mail ID<br/>
+Scenario Result: PASSED<br/>
+User launched login URL<br/>
+User enters the user name @test.com<br/>
+User enters the user name A@123<br/>
+User clicks on login button<br/>
+[Assertion Passed]: User is able to see Incorrect email/password combination text<br/>
+*************************************<br/>
+Feature Name> Scenario Name: Verify error messages "Incorrect email/password combination" is displayed when user enters invalid mail ID<br/>
+Scenario Result: PASSED<br/>
+User launched login URL<br/>
+User enters the user name quality@jukinmedia.com<br/>
+User enters the user name A@123<br/>
+User clicks on login button<br/>
+[Assertion Passed]: Incorrect password text is displayed<br/>
+*************************************<br/>
+Feature Name> Scenario Name: Verify error message "Incorrect password" is displayed when user enters incorrect password<br/>
+Scenario Result: PASSED<br/>
 </div>
 </td>
-<td><div><pre>cucumber.runtime.CucumberException: java.lang.AssertionError: [Assertion Failed]: Cursor is not enabled expected [true] but found [false]
-	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
-	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
-	at java.util.ArrayList.forEach(ArrayList.java:1257)
-Caused by: java.lang.AssertionError: [Assertion Failed]: Cursor is not enabled expected [true] but found [false]
-	at JukinMedia.automation.action.LoginPageAction.verifyCursorIsEnabledWhenUserHoverOverLoginButton(LoginPageAction.java:147)
-	at JukinMedia.automation.stepdefs.LoginPageStepDef.verifyCursorIsEnabledWhenUserHoverOverLoginButton(LoginPageStepDef.java:108)
-	at ?.Then Verify cursor should be enabled when user hover over the login button(LoginPage.feature:45)
-... Removed 35 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace302987494", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace302987494'><pre>cucumber.runtime.CucumberException: java.lang.AssertionError: [Assertion Failed]: Cursor is not enabled expected [true] but found [false]
-	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
-	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.ArrayList.forEach(ArrayList.java:1257)
-	at org.testng.TestRunner.privateRun(TestRunner.java:764)
-	at org.testng.TestRunner.run(TestRunner.java:585)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-	at org.testng.TestNG.runSuites(TestNG.java:1069)
-	at org.testng.TestNG.run(TestNG.java:1037)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:112)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:383)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:344)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:417)
-Caused by: java.lang.AssertionError: [Assertion Failed]: Cursor is not enabled expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:99)
-	at org.testng.Assert.failNotEquals(Assert.java:1037)
-	at org.testng.Assert.assertTrue(Assert.java:45)
-	at JukinMedia.automation.action.LoginPageAction.verifyCursorIsEnabledWhenUserHoverOverLoginButton(LoginPageAction.java:147)
-	at JukinMedia.automation.stepdefs.LoginPageStepDef.verifyCursorIsEnabledWhenUserHoverOverLoginButton(LoginPageStepDef.java:108)
-	at ?.Then Verify cursor should be enabled when user hover over the login button(LoginPage.feature:45)
-</pre></div></td>
+<td></td>
 <td>5</td>
-<td>JukinMedia.automation.Runner@7fac631b</td></tr>
-<tr>
-<td title='JukinMedia.automation.Runner.feature()'><b>feature</b><br>Test class: JukinMedia.automation.Runner<br>Test method: Runs Cucumber Feature<br>Parameters: Register Page<br/>
-<a href="#Output-886004375" onClick='toggleBox("Output-886004375", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-886004375" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-886004375">
-User launched login URL<br/>
-User clicks on Register link<br/>
-[Assertion Passed]: User is directed to Registration page<br/>
-*************************************<br/>
-Feature Name> Scenario Name: Verify on clicking register link user is directed to register page<br/>
-Scenario Result: PASSED<br/>
-[Assertion Passed]: Login form heading "Fill out the form to create your account." is displayed<br/>
-[Assertion Passed]: Email field is displayed<br/>
-[Assertion Passed]: Password field is displayed<br/>
-[Assertion Passed]: Confirm Password field is displayed<br/>
-[Assertion Passed]: Submit Button is displayed<br/>
-[Assertion Passed]: Back to login Button is displayed<br/>
-*************************************<br/>
-Feature Name> Scenario Name: Verify register page form elements<br/>
-Scenario Result: PASSED<br/>
-User enters the email abc@test.com<br/>
-User enters the password A@123<br/>
-User enters the confirmation password A@123<br/>
-User clicks on submit button<br/>
-Registration successful page is displayed<br/>
-*************************************<br/>
-Feature Name> Scenario Name: Verify user is able to successfully register on entering valid email and password<br/>
-Scenario Result: PASSED<br/>
-User launched login URL<br/>
-User clicks on Register link<br/>
-User clicks on submit button<br/>
-Exception page is displayed<br/>
-*************************************<br/>
-Feature Name> Scenario Name: Verify user is redirected to Exception page if user clicks on submit button leaving every field blank<br/>
-Scenario Result: PASSED<br/>
-User launched login URL<br/>
-User clicks on Register link<br/>
-User enters the email abc.com<br/>
-User enters the password A@123<br/>
-User enters the confirmation password A@123<br/>
-User clicks on submit button<br/>
-[Assertion Passed]: Fail Message is displayed: Please enter a valid Email.<br/>
-*************************************<br/>
-Feature Name> Scenario Name: Verify is user enters invalid email a fail message is displayed<br/>
-Scenario Result: PASSED<br/>
-User launched login URL<br/>
-User clicks on Register link<br/>
-User enters the email abc@test.com<br/>
-User enters the password A@123a<br/>
-User enters the confirmation password A@123<br/>
-User clicks on submit button<br/>
-[Assertion Passed]: Fail Message is displayed: Password confirmation must must match Password<br/>
-*************************************<br/>
-Feature Name> Scenario Name: Verify on password and confirm password field mismatch fail message is displayed<br/>
-Scenario Result: PASSED<br/>
-User hover over tool tip image<br/>
-[Assrtion Passed]: Tool tip is displayed on hovering too tip image<br/>
-*************************************<br/>
-Feature Name> Scenario Name: Verify on hovering over tool tip image tool tip text is displayed<br/>
-Scenario Result: PASSED<br/>
-User hover over email text field<br/>
-*************************************<br/>
-Feature Name> Scenario Name: Verify tool tip disappers when user stops hovering over tool tip image<br/>
-Scenario Result: FAILED<br/>
-</div>
-</td>
-<td><div><pre>cucumber.runtime.CucumberException: java.lang.AssertionError: [Assrtion Failed]: Tool tip is displayed expected [false] but found [true]
-	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
-	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
-	at java.util.ArrayList.forEach(ArrayList.java:1257)
-Caused by: java.lang.AssertionError: [Assrtion Failed]: Tool tip is displayed expected [false] but found [true]
-	at JukinMedia.automation.action.RegisterPageAction.verifyToolTipDisappears(RegisterPageAction.java:110)
-	at JukinMedia.automation.stepdefs.RegisterPageStepDef.verifyToolTipDisappears(RegisterPageStepDef.java:67)
-	at ?.Then Verify tool tip disappers when user stops hovering over tool tip image(RegisterPage.feature:59)
-... Removed 35 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace886004375", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace886004375'><pre>cucumber.runtime.CucumberException: java.lang.AssertionError: [Assrtion Failed]: Tool tip is displayed expected [false] but found [true]
-	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
-	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.ArrayList.forEach(ArrayList.java:1257)
-	at org.testng.TestRunner.privateRun(TestRunner.java:764)
-	at org.testng.TestRunner.run(TestRunner.java:585)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-	at org.testng.TestNG.runSuites(TestNG.java:1069)
-	at org.testng.TestNG.run(TestNG.java:1037)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:112)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:383)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:344)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:417)
-Caused by: java.lang.AssertionError: [Assrtion Failed]: Tool tip is displayed expected [false] but found [true]
-	at org.testng.Assert.fail(Assert.java:99)
-	at org.testng.Assert.failNotEquals(Assert.java:1037)
-	at org.testng.Assert.assertFalse(Assert.java:67)
-	at JukinMedia.automation.action.RegisterPageAction.verifyToolTipDisappears(RegisterPageAction.java:110)
-	at JukinMedia.automation.stepdefs.RegisterPageStepDef.verifyToolTipDisappears(RegisterPageStepDef.java:67)
-	at ?.Then Verify tool tip disappers when user stops hovering over tool tip image(RegisterPage.feature:59)
-</pre></div></td>
-<td>9</td>
 <td>JukinMedia.automation.Runner@7fac631b</td></tr>
 </table><p>
 </body>

@@ -16,6 +16,7 @@ public class LoginPageAction extends GetPage {
 	public By registerLink = By.xpath("//a[text()=' Register ']");
 	public By h3Header = By.cssSelector("h3");
 	public By incorrectEmailPassordTxt = By.xpath("//div[contains(text(),'Incorrect email/password combination')]");
+	public By invalidPassword = By.id("invalidPassword");
 
 	public LoginPageAction(WebDriver driver) {
 		super(driver);
@@ -87,7 +88,13 @@ public class LoginPageAction extends GetPage {
 		Assert.assertTrue(getWebElement(incorrectEmailPassordTxt).isDisplayed(),
 				"[Assertion Failed]: User is not able to see Incorrect email/password combination text");
 		Reporter.log("[Assertion Passed]: User is able to see Incorrect email/password combination text", true);
-		Reporter.log("User is not able to login", true);
+		Reporter.log("[Assertion Passed]: User is not able to login", true);
+	}
+	
+	public void verifyIncorrectEmailPasswordCombinationTextIsDisplayedForInvalidMailID() {
+		Assert.assertTrue(getWebElement(incorrectEmailPassordTxt).getText().contains("Incorrect email/password combination"),
+				"[Assertion Failed]: User is not able to see Incorrect email/password combination text");
+		Reporter.log("[Assertion Passed]: User is able to see Incorrect email/password combination text", true);
 	}
 
 	public void verifyFormHeading(String heading) {
@@ -148,5 +155,9 @@ public class LoginPageAction extends GetPage {
 		Reporter.log("[Assertion Passed]: Cursor is endbled");
 	}
 	
+	public void verifyIncorrectPasswordMessageIsDisplayed() {
+		Assert.assertTrue(getWebElement(invalidPassword).getText().contains("Incorrect password")  ,"[Assertion Failed]: Incorrect password is not displayed");
+		Reporter.log("[Assertion Passed]: Incorrect password text is displayed");
+	}
 
 }
