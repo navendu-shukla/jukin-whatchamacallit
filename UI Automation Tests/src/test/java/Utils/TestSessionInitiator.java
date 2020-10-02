@@ -1,6 +1,7 @@
 package Utils;
 
 import java.io.File;
+import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -20,6 +21,7 @@ public class TestSessionInitiator {
 	protected WebDriver driver;
 	protected SeleniumWait wait;
 	private final WebDriverFactory wd;
+	private final RunApp runApp;
 	String driverpath = System.getProperty("user.dir") + File.separator + "src" + File.separator + "test"
 			+ File.separator + "resources" + File.separator + "drivers" + File.separator;
 
@@ -29,10 +31,18 @@ public class TestSessionInitiator {
 
 	public TestSessionInitiator() {
 		wd = new WebDriverFactory();
+		runApp  = new RunApp();
 		testInitiator();
 	}
 
 	private void testInitiator() {
+		try {
+			runApp.runApp();
+		} catch (IOException e) {
+			e.printStackTrace();
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
 		configureBrowser();
 		initPage();
 
@@ -46,13 +56,14 @@ public class TestSessionInitiator {
 
 
 	public void configureBrowser() {
-		driver = wd.getChromeDriver();
+		driver = wd.getLocalDriver();
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 	}
 
 	public void tearDown() {
 		Reporter.log("Test over", true);
+		runApp.closeApp();
 		driver.quit();
 	}
 

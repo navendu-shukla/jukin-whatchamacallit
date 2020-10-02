@@ -44,7 +44,7 @@ public class ForgotPasswordPageAction extends GetPage{
 		WebElement flashmessage = getWebElement(flashMessage);
 		wait.waitForPageToLoadCompletely();
 		Assert.assertTrue(flashmessage.isDisplayed() , "[Assertion Failed]: flash Message is not displayed");
-		Assert.assertTrue(flashmessage.getText().contains("Please enter a valid email") , "[Assertion Failed]: Correct flash message is displayed");
+		Assert.assertTrue(flashmessage.getText().contains("Please enter a valid email") , "[Assertion Failed]: Correct flash message is not displayed :: expected: Please enter a valid email but was found: "+flashmessage.getText());
 		Reporter.log("[Assertion Passed]: flash Message is displayed: Please enter a valid email" , true);
 	}
 	
@@ -66,6 +66,13 @@ public class ForgotPasswordPageAction extends GetPage{
 	}
 	
 	public void verifyPasswordResetModal() {
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+//		wait.waitForElementToBeVisible(modalTitle);
 		Assert.assertTrue(getWebElement(modalTitle).isDisplayed(), "[Assertion Failed]: Password reset successful modal is not displayed");
 		Reporter.log("[Assertion Passed]: Password reset successful modal is displayed" , true);
 	}

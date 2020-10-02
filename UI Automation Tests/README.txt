@@ -16,6 +16,17 @@ tags available : @Login , @RegisterPage , @ForgotPassword
 
 To execute all the UI tests execute : mvn clean verify -Dcucumber.options=--tags'@Login,@RegisterPage,@ForgotPassword'
 
+By default the scripts will execute on chrome
+if you want to execute the scripts on some other browsers -Dbrowser=<browser name> should be also passed in the maven command
+Browser configuration available are
+-Dbrowser=chrome  
+-Dbrowser=firefox
+-Dbrowser=edge
+-Dbrowser=ie
+-Dbrowser=safari
+
+Note: If we execute "mvn clean verify" , it will execute the tests attached to the tags specified in the Runner.java
+
 
 ###############################################################
 
@@ -44,6 +55,7 @@ How to improve the automatability of the Login Page
 1. In the links Forgot Password and Register an aditional attribute id can be added 
 2. In the div tag containing "Incorrect email/password combination" an aditional attribute id can be added 
 3. The label tags with "Username" and "Password" should have additional attributes so that locators can be made easily
+4. For the buttons/Links perfomming similar actions a common html attribute should be added to them so that locators can be reused (For instance we have Submit button on register and forget password page with no common attribute. If we can add an attribute which is similar for both we can create and use single locator for both buttons)
 
 
 
